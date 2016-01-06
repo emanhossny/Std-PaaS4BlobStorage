@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:persistent_storage_service_manifest xmlns:tns="http://www.example.org/PersistentStorageManifest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/PersistentStorageManifest PersistentStorageManifest.xsd ">
+  <tns:description>this manifest describe a sample of a persistent storage service manifest</tns:description>
+  <tns:storage_service_account>
+    <tns:account_name></tns:account_name>
+    <tns:account_key></tns:account_key>
+  </tns:storage_service_account>
+  <tns:container name="persistentstoragebucket" provider="GAE"/>
+</tns:persistent_storage_service_manifest>
+
+
+
+<!-- <tns:blob name="test.txt" location="E:\uploads"/> -->

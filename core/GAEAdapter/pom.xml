@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>std-paas</groupId>
+    <artifactId>std-core</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>std-GAEAdapter</artifactId>
+  <name>GAE Adapter for Std PaaS API</name>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>std-paas-api</groupId>
+    	<artifactId>std-paas-api</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    <groupId>com.google.appengine.tools</groupId>
+    <artifactId>appengine-gcs-client</artifactId>
+    <version>RELEASE</version>
+	</dependency>
+    
+  </dependencies>
+  <organization>
+  	<name>Faculty of Computers and Information, Cairo University</name>
+  	<url>fci.cu.edu.eg</url>
+  </organization>
+  <groupId>std-GAEAdapter</groupId>
+</project>

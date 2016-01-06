@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/PersistentStorageManifest" xmlns:tns="http://www.example.org/PersistentStorageManifest" elementFormDefault="qualified">
+
+
+
+
+
+    <element name="persistent_storage_service_manifest"
+    	type="tns:persistent_storage_service_manifest">
+    </element>
+    
+    <complexType name="persistent_storage_service_manifest">
+    	<sequence>
+    		<element name="description" type="string"></element>
+    		<element name="storage_service_account"
+    			type="tns:storage_service_account">
+    		</element>
+    		<element name="container" type="tns:container"></element>
+    		<element name="blob" type="tns:blob"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="storage_service_account">
+    	<sequence>
+    		<element name="account_name" type="string"></element>
+    		<element name="account_key" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="container">
+    	<attribute name="name" type="string"></attribute>
+    	<attribute name="provider" type="string"></attribute>
+    </complexType>
+
+    <complexType name="blob">
+    	<attribute name="name" type="string"></attribute>
+    	<attribute name="location" type="string"></attribute>
+    </complexType>
+</schema>

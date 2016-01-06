@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:persistent_storage_service_manifest xmlns:tns="http://www.example.org/PersistentStorageManifest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/PersistentStorageManifest PersistentStorageManifest.xsd ">
+  <tns:description>this manifest describe a sample of a persistent storage service manifest</tns:description>
+  <tns:storage_service_account>
+    <tns:account_name>teststdstorage</tns:account_name>
+    <tns:account_key>0RUwiT5IJ8B2YquxDRLHG0uMSdNq8HuqIqNidoone31gAPYrKyaQKHUzu4smXheileFziu3z2o/emMssKa346w==</tns:account_key>
+  </tns:storage_service_account>
+  <tns:container name="mycontainer" provider="Azure"/>
+</tns:persistent_storage_service_manifest>
+
+
+<!-- <tns:blob name="test.txt" location="E:\uploads"/> -->

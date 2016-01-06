@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>std-core</artifactId>
+  <packaging>pom</packaging>
+  <parent>
+  	<groupId>std-paas</groupId>
+  	<artifactId>std-paas</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <name>Std PaaS Core Parent POM</name>
+  <description>it includes adapters to map Std-PaaS API to a heterogeneous PaaS platform.</description>
+  <organization>
+  	<name>Faculty of Computers and Information, Cairo University</name>
+  	<url>fci.cu.edu.eg</url>
+  </organization>
+  <modules>
+    <module>AzureAdapter</module>
+    <module>GAEAdapter</module>
+   </modules>
+</project>

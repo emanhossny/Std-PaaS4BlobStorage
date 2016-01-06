@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>std-paas</groupId>
+    <artifactId>std-paas</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>std-paas-api</artifactId>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <name>Std PaaS API</name>
+  <description>A generic API to help developers to implement portable cloud applications to be able to be deployed on heterogeneous PaaS platform.</description>
+  <organization>
+  	<name>Faculty of Computers and Information, Cairo University</name>
+  	<url>fci.cu.edu.eg</url>
+  </organization>
+  <groupId>std-paas-api</groupId>
+</project>

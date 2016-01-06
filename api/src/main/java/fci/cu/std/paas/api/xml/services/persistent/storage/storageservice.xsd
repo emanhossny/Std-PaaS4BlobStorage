@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/storageservice" xmlns:tns="http://www.example.org/storageservice" elementFormDefault="qualified">
+
+
+
+    
+    <complexType name="storage_account">
+    	<sequence>
+    		<element name="name" type="string"></element>
+    		<element name="key" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    
+    <complexType name="container">
+    	<sequence>
+    		<element name="name" type="string"></element>
+    		<element name="provider" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    
+    <complexType name="blob">
+    	<sequence>
+    		<element name="name" type="string"></element>
+    		<element name="location" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="storage_service_type"
+    	type="tns:storage_service_type">
+    </element>
+    
+    <complexType name="storage_service_type">
+    	<sequence>
+    		<element name="storId" type="int"></element>
+            <element name="description" type="string"></element>
+            <element name="storage_account"
+    			type="tns:storage_account">
+    		</element>
+    		<element name="container" type="tns:container"></element>
+            <element name="blob" type="tns:blob"></element>
+    	</sequence>
+    </complexType>
+</schema>
